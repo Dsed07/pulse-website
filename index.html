@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PulseList</title>
+<meta name="description" content="One short list of what actually needs you. PulseList reads what is already on your iPhone and stays quiet about the rest.">
+<meta property="og:title" content="PulseList">
+<meta property="og:description" content="One short list of what actually needs you. PulseList reads what is already on your iPhone and stays quiet about the rest.">
+<style>
+:root{--bg:#FAF6F1;--surface:#FFF;--border:#E4E1DB;--divider:#EBE7E2;--hi:#1E1A16;
+--mid:#59544F;--lo:#8A8580;--signal:#ED9235;
+--sans:'Schibsted Grotesk',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+--mono:'IBM Plex Mono',ui-monospace,'SF Mono',Menlo,Consolas,monospace}
+@media(prefers-color-scheme:dark){:root{--bg:#100C09;--surface:#1D1814;--border:#322D28;
+--divider:#322D28;--hi:#F5F1EC;--mid:#AFAAA4;--lo:#8A8580;--signal:#FB9F44}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--hi);font-family:var(--sans);font-size:17px;
+line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:44rem;margin:0 auto;padding:0 20px 56px}
+header.site{display:flex;align-items:center;gap:12px;padding:20px 0 32px}
+.mark{width:32px;height:32px;color:var(--signal);flex:none}
+.wordmark{font-size:20px;font-weight:600;letter-spacing:-.01em}
+nav.site{margin-left:auto;display:flex;gap:16px}
+nav.site a{color:var(--mid);text-decoration:none;font-size:15px}
+nav.site a:hover,nav.site a[aria-current]{color:var(--hi)}
+h1{font-size:40px;font-weight:700;letter-spacing:-.03em;line-height:1.1;margin:0 0 16px}
+h2{font-size:20px;font-weight:600;letter-spacing:-.01em;margin:32px 0 8px}
+h3{font-size:17px;font-weight:600;margin:20px 0 4px}
+p,li{color:var(--mid)}
+strong{color:var(--hi);font-weight:600}
+a{color:var(--signal)}
+code{font-family:var(--mono);font-size:.9em;background:var(--surface);border:1px solid var(--border);
+border-radius:6px;padding:1px 5px;color:var(--hi)}
+hr{border:0;border-top:1px solid var(--divider);margin:32px 0}
+blockquote{margin:16px 0;padding:12px 16px;border-left:2px solid var(--border);
+background:var(--surface);border-radius:0 12px 12px 0}
+blockquote p{margin:0}
+table{border-collapse:collapse;width:100%;margin:16px 0;font-size:15px}
+th,td{text-align:left;padding:8px 12px;border-bottom:1px solid var(--divider);vertical-align:top}
+th{color:var(--hi);font-weight:600}
+.meta{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--lo)}
+.lede{font-size:20px;color:var(--mid);line-height:1.4;margin:0 0 32px}
+.note{font-size:15px;color:var(--lo);border:1px solid var(--border);border-radius:12px;
+padding:12px 16px;margin:0 0 32px;background:var(--surface)}
+.cards{display:grid;gap:12px;margin:32px 0}
+.card{border:1px solid var(--border);border-radius:18px;padding:16px 20px;background:var(--surface)}
+.card h3{margin:0 0 4px;color:var(--hi)}
+.card p{margin:0;font-size:15px}
+footer.site{margin-top:56px;padding-top:20px;border-top:1px solid var(--divider);font-size:15px;
+color:var(--lo);display:flex;gap:16px;flex-wrap:wrap}
+footer.site a{color:var(--mid);text-decoration:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="site"><svg class="mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5.5"/><path d="M7 13h2.2l1.4-4 2.2 8 1.4-4H17"/></svg><span class="wordmark">PulseList</span>
+<nav class="site"><a href="/" aria-current="page">Home</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></nav>
+</header>
+
+<h1>One short list of what actually needs you.</h1>
+<p class="lede">PulseList reads the letters, screenshots and reminders already on your iPhone,
+puts the few things with a date on them on one list, and stays quiet about everything else.</p>
+
+<div class="cards">
+  <div class="card"><h3>It reads on your iPhone</h3>
+  <p>Photograph a letter or hand over a screenshot. PulseList works out what it is asking of you,
+  on the device.</p></div>
+  <div class="card"><h3>It never writes back</h3>
+  <p>Reminders and Calendar are read, never changed. Clearing something here leaves what is in
+  Apple's own apps exactly as it was.</p></div>
+  <div class="card"><h3>It stays quiet</h3>
+  <p>An event earns a place only when it asks something of you before it happens. Everything else
+  it reads is left alone.</p></div>
+</div>
+
+<p class="meta">Coming to the App Store</p>
+<p>PulseList is in development. The <a href="/privacy/">privacy policy</a> and
+<a href="/terms/">terms of service</a> are published here in advance.</p>
+
+<footer class="site"><span>© 2026 David Sedacca</span>
+<a href="/privacy/">Privacy</a><a href="/terms/">Terms</a>
+<a href="mailto:privacy@pulselist.io">privacy@pulselist.io</a></footer>
+</div>
+</body>
+</html>
